@@ -1,8 +1,11 @@
-/***
- * readLines returns an array of Strings. Each entry is a line in `filePath`.
- * @param filePath; the relative path to the file you are reading
- * @return lines; a String[] containing the lines in `filePath`
- ***/
+# Dev Club Resources
+This is a repository of useful functions. I will add to it as I think of more things y'all might find helpful.
+
+### Reading a File (Java)
+`readLines` reads in the lines in `filePath` and returns them as an array of Strings
++ param `filePath`: the relative path to the file you are reading
++ returns lines: an array of Strings containing the lines in `filePath`
+```Java
 public static String[] readLines(String filePath) {
   ArrayList<String> lines = new ArrayList<>();
   String sCurrentLine;
@@ -25,3 +28,4 @@ public static String[] readLines(String filePath) {
   }
   return lines.toArray(new String[0]);
 }
+```
