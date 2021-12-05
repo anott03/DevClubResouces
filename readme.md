@@ -29,3 +29,12 @@ public static String[] readLines(String filePath) {
   return lines.toArray(new String[0]);
 }
 ```
+Example usage:
+```Java
+public static void main(String[] args) {
+  String[] lines = readLines('./src/input.txt');
+  for (String line : lines) {
+    System.out.println(line);
+  }
+}
+```
